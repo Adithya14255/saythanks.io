@@ -6,7 +6,5 @@ Logfile
 Logfile.log
 conf
 
+
 saythanks-mobile-testing/reports/
-saythanks-mobile-testing/reports/*.html
-saythanks-mobile-testing/reports/*.xml
-saythanks-mobile-testing/reports/*.json
