@@ -1,0 +1,55 @@
+{
+  "start_time": "2025-07-13T19:14:25.289868",
+  "test_suites": {
+    "Responsive Layout Tests": {
+      "success": true,
+      "duration": 9.58,
+      "return_code": 0,
+      "stdout": "m/responsive_tests.py: 140 warnings\n  /usr/local/lib/python3.6/site-packages/selenium/webdriver/remote/remote_connection.py:418: DeprecationWarning: HTTPResponse.getheader() is deprecated and will be removed in urllib3 v2.1.0. Instead use HTTPResponse.headers.get(name, default).\n    if resp.getheader('Content-Type') is not None:\n\ntests/mobile/cross_platform/responsive_tests.py: 140 warnings\n  /usr/local/lib/python3.6/site-packages/selenium/webdriver/remote/remote_connection.py:419: DeprecationWarning: HTTPResponse.getheader() is deprecated and will be removed in urllib3 v2.1.0. Instead use HTTPResponse.headers.get(name, default).\n    content_type = resp.getheader('Content-Type').split(';')\n\n-- Docs: https://docs.pytest.org/en/stable/warnings.html\n------ generated xml file: /app/reports/responsive_layout_tests_junit.xml ------\n- generated html file: file:///app/reports/responsive_layout_tests_report.html -\n======================= 3 passed, 280 warnings in 9.05s ========================\n",
+      "stderr": ""
+    },
+    "Touch Interaction Tests": {
+      "success": true,
+      "duration": 3.4,
+      "return_code": 0,
+      "stdout": "ross_platform/touch_tests.py: 17 warnings\n  /usr/local/lib/python3.6/site-packages/selenium/webdriver/remote/remote_connection.py:418: DeprecationWarning: HTTPResponse.getheader() is deprecated and will be removed in urllib3 v2.1.0. Instead use HTTPResponse.headers.get(name, default).\n    if resp.getheader('Content-Type') is not None:\n\ntests/mobile/cross_platform/touch_tests.py: 17 warnings\n  /usr/local/lib/python3.6/site-packages/selenium/webdriver/remote/remote_connection.py:419: DeprecationWarning: HTTPResponse.getheader() is deprecated and will be removed in urllib3 v2.1.0. Instead use HTTPResponse.headers.get(name, default).\n    content_type = resp.getheader('Content-Type').split(';')\n\n-- Docs: https://docs.pytest.org/en/stable/warnings.html\n------ generated xml file: /app/reports/touch_interaction_tests_junit.xml ------\n- generated html file: file:///app/reports/touch_interaction_tests_report.html -\n======================== 2 passed, 34 warnings in 2.95s ========================\n",
+      "stderr": ""
+    },
+    "Content Adaptation Tests": {
+      "success": true,
+      "duration": 3.28,
+      "return_code": 0,
+      "stdout": "platform/content_tests.py: 31 warnings\n  /usr/local/lib/python3.6/site-packages/selenium/webdriver/remote/remote_connection.py:418: DeprecationWarning: HTTPResponse.getheader() is deprecated and will be removed in urllib3 v2.1.0. Instead use HTTPResponse.headers.get(name, default).\n    if resp.getheader('Content-Type') is not None:\n\ntests/mobile/cross_platform/content_tests.py: 31 warnings\n  /usr/local/lib/python3.6/site-packages/selenium/webdriver/remote/remote_connection.py:419: DeprecationWarning: HTTPResponse.getheader() is deprecated and will be removed in urllib3 v2.1.0. Instead use HTTPResponse.headers.get(name, default).\n    content_type = resp.getheader('Content-Type').split(';')\n\n-- Docs: https://docs.pytest.org/en/stable/warnings.html\n----- generated xml file: /app/reports/content_adaptation_tests_junit.xml ------\n- generated html file: file:///app/reports/content_adaptation_tests_report.html -\n======================== 2 passed, 62 warnings in 2.79s ========================\n",
+      "stderr": ""
+    },
+    "JavaScript Functionality Tests": {
+      "success": false,
+      "duration": 5.22,
+      "return_code": 1,
+      "stdout": "PResponse.getheader() is deprecated and will be removed in urllib3 v2.1.0. Instead use HTTPResponse.headers.get(name, default).\n    content_type = resp.getheader('Content-Type').split(';')\n\n-- Docs: https://docs.pytest.org/en/stable/warnings.html\n-- generated xml file: /app/reports/javascript_functionality_tests_junit.xml ---\n- generated html file: file:///app/reports/javascript_functionality_tests_report.html -\n=========================== short test summary info ============================\nFAILED tests/mobile/cross_platform/javascript_tests.py::TestSayThanksJavaScript::test_word_counter_mobile\nFAILED tests/mobile/cross_platform/javascript_tests.py::TestSayThanksJavaScript::test_badge_modal_mobile\nFAILED tests/mobile/cross_platform/javascript_tests.py::TestSayThanksJavaScript::test_font_selector_mobile\nFAILED tests/mobile/cross_platform/javascript_tests.py::TestSayThanksJavaScript::test_pagination_mobile\n=================== 4 failed, 2 passed, 38 warnings in 4.75s ===================\n",
+      "stderr": ""
+    },
+    "Performance Tests": {
+      "success": true,
+      "duration": 2.95,
+      "return_code": 0,
+      "stdout": "m/performance_tests.py: 10 warnings\n  /usr/local/lib/python3.6/site-packages/selenium/webdriver/remote/remote_connection.py:418: DeprecationWarning: HTTPResponse.getheader() is deprecated and will be removed in urllib3 v2.1.0. Instead use HTTPResponse.headers.get(name, default).\n    if resp.getheader('Content-Type') is not None:\n\ntests/mobile/cross_platform/performance_tests.py: 10 warnings\n  /usr/local/lib/python3.6/site-packages/selenium/webdriver/remote/remote_connection.py:419: DeprecationWarning: HTTPResponse.getheader() is deprecated and will be removed in urllib3 v2.1.0. Instead use HTTPResponse.headers.get(name, default).\n    content_type = resp.getheader('Content-Type').split(';')\n\n-- Docs: https://docs.pytest.org/en/stable/warnings.html\n--------- generated xml file: /app/reports/performance_tests_junit.xml ---------\n---- generated html file: file:///app/reports/performance_tests_report.html ----\n======================== 2 passed, 20 warnings in 2.51s ========================\n",
+      "stderr": ""
+    },
+    "Cross-Browser Tests": {
+      "success": true,
+      "duration": 67.98,
+      "return_code": 0,
+      "stdout": "_platform/browser_tests.py: 14 warnings\n  /usr/local/lib/python3.6/site-packages/selenium/webdriver/remote/remote_connection.py:418: DeprecationWarning: HTTPResponse.getheader() is deprecated and will be removed in urllib3 v2.1.0. Instead use HTTPResponse.headers.get(name, default).\n    if resp.getheader('Content-Type') is not None:\n\ntests/mobile/cross_platform/browser_tests.py: 14 warnings\n  /usr/local/lib/python3.6/site-packages/selenium/webdriver/remote/remote_connection.py:419: DeprecationWarning: HTTPResponse.getheader() is deprecated and will be removed in urllib3 v2.1.0. Instead use HTTPResponse.headers.get(name, default).\n    content_type = resp.getheader('Content-Type').split(';')\n\n-- Docs: https://docs.pytest.org/en/stable/warnings.html\n-------- generated xml file: /app/reports/cross_browser_tests_junit.xml --------\n--- generated html file: file:///app/reports/cross_browser_tests_report.html ---\n================== 2 passed, 28 warnings in 67.52s (0:01:07) ===================\n",
+      "stderr": ""
+    }
+  },
+  "summary": {
+    "end_time": "2025-07-13T19:17:06.924736",
+    "total_duration": 161.63,
+    "total_suites": 6,
+    "passed_suites": 5,
+    "failed_suites": 1,
+    "success_rate": 83.3
+  }
+}

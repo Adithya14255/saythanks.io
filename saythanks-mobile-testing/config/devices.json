@@ -1,0 +1,60 @@
+{
+  "mobile_devices": {
+    "iphone_se": {
+      "width": 375,
+      "height": 667,
+      "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X)",
+      "device_name": "iPhone SE"
+    },
+    "iphone_12": {
+      "width": 390,
+      "height": 844,
+      "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X)",
+      "device_name": "iPhone 12"
+    },
+    "iphone_14_pro": {
+      "width": 393,
+      "height": 852,
+      "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X)",
+      "device_name": "iPhone 14 Pro"
+    },
+    "android_pixel": {
+      "width": 411,
+      "height": 731,
+      "user_agent": "Mozilla/5.0 (Linux; Android 11; Pixel 4)",
+      "device_name": "Google Pixel 4"
+    },
+    "samsung_galaxy_s21": {
+      "width": 360,
+      "height": 640,
+      "user_agent": "Mozilla/5.0 (Linux; Android 11; SM-G991B)",
+      "device_name": "Samsung Galaxy S21"
+    },
+    "samsung_galaxy_note": {
+      "width": 414,
+      "height": 736,
+      "user_agent": "Mozilla/5.0 (Linux; Android 10; SM-N975F)",
+      "device_name": "Samsung Galaxy Note 10+"
+    }
+  },
+  "tablet_devices": {
+    "ipad": {
+      "width": 768,
+      "height": 1024,
+      "user_agent": "Mozilla/5.0 (iPad; CPU OS 14_0 like Mac OS X)",
+      "device_name": "iPad"
+    },
+    "ipad_pro": {
+      "width": 1024,
+      "height": 1366,
+      "user_agent": "Mozilla/5.0 (iPad; CPU OS 15_0 like Mac OS X)",
+      "device_name": "iPad Pro"
+    },
+    "android_tablet": {
+      "width": 800,
+      "height": 1280,
+      "user_agent": "Mozilla/5.0 (Linux; Android 9; SM-T510)",
+      "device_name": "Samsung Galaxy Tab A"
+    }
+  }
+}

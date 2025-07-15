@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite errors="0" failures="4" hostname="966552181d7c" name="pytest" skipped="0" tests="6" time="4.736" timestamp="2025-07-13T19:15:51.149622"><testcase classname="tests.mobile.cross_platform.javascript_tests.TestSayThanksJavaScript" name="test_javascript_execution" time="1.103" /><testcase classname="tests.mobile.cross_platform.javascript_tests.TestSayThanksJavaScript" name="test_local_storage_mobile" time="0.998" /><testcase classname="tests.mobile.cross_platform.javascript_tests.TestSayThanksJavaScript" name="test_word_counter_mobile" time="0.597"><failure message="selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED&#10;  (Session info: chrome=138.0.7204.100)">tests/mobile/cross_platform/javascript_tests.py:78: in test_word_counter_mobile
+    mobile_driver.get("http://localhost:5000/to/testuser")
+/usr/local/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py:333: in get
+    self.execute(Command.GET, {'url': url})
+/usr/local/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py:321: in execute
+    self.error_handler.check_response(response)
+/usr/local/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py:242: in check_response
+    raise exception_class(message, screen, stacktrace)
+E   selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+E     (Session info: chrome=138.0.7204.100)</failure></testcase><testcase classname="tests.mobile.cross_platform.javascript_tests.TestSayThanksJavaScript" name="test_badge_modal_mobile" time="0.525"><failure message="selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED&#10;  (Session info: chrome=138.0.7204.100)">tests/mobile/cross_platform/javascript_tests.py:97: in test_badge_modal_mobile
+    mobile_driver.get("http://localhost:5000/inbox")  # Mock URL
+/usr/local/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py:333: in get
+    self.execute(Command.GET, {'url': url})
+/usr/local/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py:321: in execute
+    self.error_handler.check_response(response)
+/usr/local/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py:242: in check_response
+    raise exception_class(message, screen, stacktrace)
+E   selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+E     (Session info: chrome=138.0.7204.100)</failure></testcase><testcase classname="tests.mobile.cross_platform.javascript_tests.TestSayThanksJavaScript" name="test_font_selector_mobile" time="0.570"><failure message="selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED&#10;  (Session info: chrome=138.0.7204.100)">tests/mobile/cross_platform/javascript_tests.py:119: in test_font_selector_mobile
+    mobile_driver.get("http://localhost:5000/inbox")
+/usr/local/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py:333: in get
+    self.execute(Command.GET, {'url': url})
+/usr/local/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py:321: in execute
+    self.error_handler.check_response(response)
+/usr/local/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py:242: in check_response
+    raise exception_class(message, screen, stacktrace)
+E   selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+E     (Session info: chrome=138.0.7204.100)</failure></testcase><testcase classname="tests.mobile.cross_platform.javascript_tests.TestSayThanksJavaScript" name="test_pagination_mobile" time="0.538"><failure message="selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED&#10;  (Session info: chrome=138.0.7204.100)">tests/mobile/cross_platform/javascript_tests.py:141: in test_pagination_mobile
+    mobile_driver.get("http://localhost:5000/inbox")
+/usr/local/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py:333: in get
+    self.execute(Command.GET, {'url': url})
+/usr/local/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py:321: in execute
+    self.error_handler.check_response(response)
+/usr/local/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py:242: in check_response
+    raise exception_class(message, screen, stacktrace)
+E   selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+E     (Session info: chrome=138.0.7204.100)</failure></testcase></testsuite></testsuites>

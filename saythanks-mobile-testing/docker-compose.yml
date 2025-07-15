@@ -1,0 +1,70 @@
+
+services:
+  android:
+    image: appium/appium
+    container_name: appium_android
+    ports:
+      - "4723:4723"
+    environment:
+      - APPIUM_PORT=4723
+    networks:
+      - mobile_testing_network
+
+  ios:
+    image: appium/appium
+    container_name: appium_ios
+    ports:
+      - "4725:4723"
+    environment:
+      - APPIUM_PORT=4725
+    networks:
+      - mobile_testing_network
+
+  selenium:
+    image: selenium/standalone-chrome:latest
+    container_name: selenium_chrome
+    ports:
+      - "4444:4444"
+    environment:
+      - SE_SESSION_TIMEOUT=300
+      - SE_NODE_SESSION_TIMEOUT=300
+    shm_size: 2gb
+    networks:
+      - mobile_testing_network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:4444/wd/hub/status"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+
+  test-runner:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: mobile_test_runner
+    volumes:
+      - ./reports:/app/reports
+      - ./tests:/app/tests
+      - ./config:/app/config
+      - ./utils:/app/utils
+    depends_on:
+      selenium:
+        condition: service_healthy
+      android:
+        condition: service_started
+      ios:
+        condition: service_started
+    environment:
+      - SELENIUM_HUB_HOST=selenium
+      - SELENIUM_HUB_PORT=4444
+      - ANDROID_HOST=android
+      - ANDROID_PORT=4723
+      - IOS_HOST=ios
+      - IOS_PORT=4725
+    networks:
+      - mobile_testing_network
+
+networks:
+  mobile_testing_network:
+    driver: bridge
